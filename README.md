@@ -42,19 +42,23 @@ A bridge table linking physical equipment to operational production lines.
 
 ## 🛠️ Methodology & Approach
 
-### 1. Data Cleaning & EDA
-* Handled missing values and standardized categorical variables (e.g., Shift names, Line names).
-* Merged `production_log` with `maintenance_order` using the `cross_reference` table.
-* Conducted Exploratory Data Analysis (EDA) to find initial trends in downtime seasonality and defect distribution.
+## 🛠️ Methodology & Analytical Approach
 
-### 2. Root Cause Analysis (RCA)
+Our team adopted a rigorous statistical approach to move beyond surface-level observations:
+
+### 1. Data Processing & Feature Engineering
+* **Data Cleaning:** Handled missing values and standardized categorical variables (e.g., Shift names, Line names).
+* **EDA:** Conducted Exploratory Data Analysis (EDA) to find initial trends in downtime seasonality and defect distribution.
+* **OEE Modeling:** Engineered comprehensive features for Availability, Performance, and Quality 
+* **Category Clustering:** Regrouped fragmented downtime descriptions (e.g., specific jam types) into higher-level operational clusters 
+
+### 2. Statistical Hypothesis Testing
+To isolate true root causes, we applied statistical tests instead of relying solely on visual trends
+
+### 3. Root Cause Analysis
 * Identified the "Vital Few" reasons contributing to the majority of downtime (e.g., Mechanical Failure vs. Material Shortage).
-* **Segmentation:** Drilled down inefficiencies by `SHIFT_NAME`, `CREW_ID`, and `SIZE_TYPE` (Product type).
-
-### 3. Business Impact Assessment
-* **Direct Loss:** Calculated as `(Downtime Minutes / Ideal Cycle Time)` + `Rejected Units`.
-* **Indirect Loss:** Estimated potential opportunity costs and delivery delays based on production order rates.
-
+* We drilled down into "Unplanned Downtime" (accounting for ~15% of losses) for material handling error, error-product frequency investigation
+  
 ### 4. Strategic Recommendations
 Formulated three pillars of improvement focused on:
 1.  Predictive Maintenance optimization.
