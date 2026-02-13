@@ -1,0 +1,5 @@
+# Loại bỏ các file dữ liệu nặng (thường > 25MB)
+*.csv
+*.xlsx
+*.parquet
+data/
