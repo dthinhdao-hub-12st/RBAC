@@ -40,8 +40,6 @@ A bridge table linking physical equipment to operational production lines.
 
 *> **Note:** All data used in this project is hypothetical and does not represent real business figures for Colgate-Palmolive.*
 
-## 🛠️ Methodology & Approach
-
 ## 🛠️ Methodology & Analytical Approach
 
 Our team adopted a rigorous statistical approach to move beyond surface-level observations:
@@ -64,6 +62,8 @@ Formulated three pillars of improvement focused on:
 1.  Predictive Maintenance optimization.
 2.  Workforce training based on Crew performance gaps.
 3.  Process standardization for high-defect product types.
+
+*> **Note:** A descriptions of notebooks' purposes will also be included*
 
 ## 📊 Deliverables
 
