@@ -38,7 +38,7 @@ Contains static data regarding maintenance orders for specific equipment.
 A bridge table linking physical equipment to operational production lines.
 * **Key Columns:** `EQUIPMENT_ID`, `LINE_NAME`.
 
-*> **Note:** All data used in this project is hypothetical and does not represent real business figures for Colgate-Palmolive.*
+*> **Note:** All data used in this project is hypothetical and does not represent real business figures for Colgate-Palmolive. For datasets, please contact with the owner of this repository.*
 
 ## 🛠️ Methodology & Analytical Approach
 
